@@ -6,7 +6,7 @@ Thrive is an AI-powered wellness companion designed to help individuals improve 
 
 - **Fitness**: Generates customized workout plans based on your goals, available equipment, and time constraints.
 - **Nutrition**: Offers tailored meal plans and recipes considering your dietary restrictions, preferences, and available ingredients.
-- **Mental Health**: Provides personalized strategies for stress management, mood improvement, and better sleep based on your current state.
+- **Mental Health**: Provides personalized strategies for stress management, mood improvement, and better sleep.
 
 ## Technology Stack
 
