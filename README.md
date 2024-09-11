@@ -10,6 +10,6 @@ Thrive is an AI-powered wellness companion designed to help individuals improve 
 
 ## Technology Stack
 
-- Backend: Python with Flask
-- Frontend: HTML, CSS, JavaScript
-- AI Integration: Anthropic's Claude API
+- **Backend**: Python with Flask
+- **Frontend**: HTML, CSS, JavaScript
+- **AI Integration**: Anthropic's Claude API
