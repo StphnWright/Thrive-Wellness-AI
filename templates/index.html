@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive - Your Health & Wellness Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">THRIVE</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Fitness</h2>
+                <form id="fitness-form">
+                    <div class="form-group">
+                        <label for="goals">Fitness Goals:</label>
+                        <input type="text" class="form-control" id="goals" name="goals" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="equipment">Available Equipment:</label>
+                        <input type="text" class="form-control" id="equipment" name="equipment" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time Constraints:</label>
+                        <input type="text" class="form-control" id="time" name="time" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Get Workout Plan</button>
+                    </div>
+                </form>
+                <div id="fitness-form-response" class="form-response mt-3"></div>
+                <div class="reset-section mt-3 text-center" style="display: none;">
+                    <button class="btn btn-primary reset-btn">Reset</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Nutrition</h2>
+                <form id="nutrition-form">
+                    <div class="form-group">
+                        <label for="restrictions">Dietary Restrictions:</label>
+                        <input type="text" class="form-control" id="restrictions" name="restrictions" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences">Food Preferences:</label>
+                        <input type="text" class="form-control" id="preferences" name="preferences" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ingredients">Available Ingredients:</label>
+                        <input type="text" class="form-control" id="ingredients" name="ingredients" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Get Meal Plan</button>
+                    </div>
+                </form>
+                <div id="nutrition-form-response" class="form-response mt-3"></div>
+                <div class="reset-section mt-3 text-center" style="display: none;">
+                    <button class="btn btn-primary reset-btn">Reset</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Mental Health</h2>
+                <form id="mental-health-form">
+                    <div class="form-group">
+                        <label for="mood">Current Mood:</label>
+                        <input type="text" class="form-control" id="mood" name="mood" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="stress_level">Stress Level (1-10):</label>
+                        <input type="number" class="form-control" id="stress_level" name="stress_level" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sleep_hours">Hours of Sleep (per night):</label>
+                        <input type="number" class="form-control" id="sleep_hours" name="sleep_hours" min="0" max="24" step="0.5" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Get Mental Health Tips</button>
+                    </div>
+                </form>
+                <div id="mental-health-form-response" class="form-response mt-3"></div>
+                <div class="reset-section mt-3 text-center" style="display: none;">
+                    <button class="btn btn-primary reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
